@@ -155,7 +155,7 @@ if __name__ == '__main__':
     parser.add_argument('--optimize', action='store_true', help='TorchScript: optimize for mobile')
     parser.add_argument('--dynamic', action='store_true', help='ONNX: dynamic axes')
     parser.add_argument('--simplify', action='store_true', help='ONNX: simplify model')
-    parser.add_argument('--opset-version', type=int, default=12, help='ONNX: opset version')
+    parser.add_argument('--opset-version', type=int, default=11, help='ONNX: opset version')
     opt = parser.parse_args()
     print(opt)
     set_logging()
